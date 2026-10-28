@@ -1,6 +1,6 @@
 # Cobbs CREEK Symposium website
 
-This folder contains your responsive Cobbs CREEK Symposium website. It uses the two original creek photos from your PDF, and each registration button opens your Qualtrics form. The creek photo between the introduction and registration is a text-free visual pause. The footer credits the Water Center at Penn and Drexel University as organizers and includes a clickable questions email: cobbscreeksymposium@gmail.com.
+This folder contains your responsive Cobbs CREEK Symposium website. It uses the two original creek photos from your PDF, and each registration button opens your Qualtrics form. The creek photo between the introduction and registration is a text-free visual pause. The organizer line appears below the countdown, with links to the Water Center at Penn and Drexel University SWRE. The footer includes a clickable questions email: cobbscreeksymposium@gmail.com.
 
 ## Put your website on GitHub Pages
 
@@ -18,15 +18,15 @@ Do this after the files are in GitHub and GitHub Pages is switched on. The file 
 
 1. In GitHub, open **Settings → Pages**. Under **Custom domain**, type `cobbscreeksymposium.org` and click **Save**. Wait until GitHub shows the domain as saved. If you see a DNS check button, use it.
 2. Open a new browser tab and sign in to Porkbun. Go to **Domain Management** and select **DNS** beside `cobbscreeksymposium.org`.
-3. Add four DNS records. For each one, choose type **A**, set **Host** to `@`, and enter the matching address below as the **Answer**. Keep Porkbun's normal/default TTL.
+3. Remove the root **ALIAS** that points to Porkbun's parking destination, and remove the wildcard `*` **CNAME**. Keep both `_acme-challenge` **TXT** records and any email-related records. Add four DNS records. For each one, choose type **A**, leave **Host** blank (Porkbun uses a blank Host for the root domain), and enter one matching address below as the **Answer**. Keep Porkbun's normal/default TTL.
 
    - `185.199.108.153`
    - `185.199.109.153`
    - `185.199.110.153`
    - `185.199.111.153`
 
-4. Add one more record. Choose type **CNAME**, set **Host** to `www`, and set **Answer** to `YOUR-GITHUB-USERNAME.github.io`—replace `YOUR-GITHUB-USERNAME` with your actual GitHub username. Do not put the repository name in this answer.
-5. Save the records. If Porkbun already has an A record for `@` or a `www` record that points somewhere else, change those website records to the values above. Do not remove email records or other records you still use.
+4. Add one more record. Choose type **CNAME**, set **Host** to `www`, and set **Answer** to `jarrynight.github.io`. Do not put `https://` or the repository name in this answer.
+5. Save the records. The root A records may appear in the list with Host displayed as `cobbscreeksymposium.org`; that's normal. Do not remove the `_acme-challenge` TXT records or email records.
 6. Give the internet time to notice the changes. It can take up to 24 hours. Then return to GitHub **Settings → Pages** and, when the option appears, turn on **Enforce HTTPS**. Visit `https://cobbscreeksymposium.org` to see the site.
 
 GitHub's Pages help and Porkbun's setup guide are linked here if you want to check the steps or see their current screens: [GitHub Pages custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site) and [Porkbun: GitHub Pages](https://kb.porkbun.com/article/64-how-to-connect-your-domain-to-github-pages).

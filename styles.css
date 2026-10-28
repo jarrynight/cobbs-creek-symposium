@@ -20,16 +20,16 @@ a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
 .skip-link { position: fixed; z-index: 20; top: 0.75rem; left: 0.75rem; padding: 0.7rem 1rem; transform: translateY(-160%); color: var(--ink); background: var(--cream); border-radius: 0.25rem; font-weight: 700; }
 .skip-link:focus { transform: translateY(0); }
 
-.hero { position: relative; display: grid; min-height: min(760px, 88svh); min-height: clamp(650px, 80vw, 790px); overflow: hidden; isolation: isolate; color: var(--cream); background: var(--green); }
+.hero { position: relative; display: grid; min-height: clamp(550px, 72svh, 680px); overflow: hidden; isolation: isolate; color: var(--cream); background: var(--green); }
 .hero__photo, .creek-banner > img { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .hero__photo { object-position: center 57%; }
 .hero__shade { position: absolute; z-index: -1; inset: 0; background: linear-gradient(180deg, rgb(20 31 19 / 43%) 0%, rgb(20 31 19 / 44%) 20%, rgb(26 22 14 / 46%) 62%, rgb(30 21 11 / 60%) 100%); }
 .hero__nav { position: absolute; top: clamp(1.1rem, 3.1vw, 2.25rem); left: 50%; display: flex; width: min(84%, 1180px); align-items: center; justify-content: space-between; transform: translateX(-50%); }
 .brand-mark, .footer__brand { color: inherit; font-family: var(--display); font-size: 1rem; font-weight: 800; letter-spacing: .14em; text-decoration: none; text-transform: uppercase; }
-.hero__content { align-self: center; justify-self: center; width: min(94%, 850px); padding: 7rem 0 5rem; text-align: center; }
+.hero__content { align-self: center; justify-self: center; width: min(94%, 850px); padding: 4.5rem 0 3rem; text-align: center; }
 .eyebrow { margin: 0; font-size: .72rem; font-weight: 700; letter-spacing: .22em; line-height: 1.7; text-transform: uppercase; }
 .hero__eyebrow { color: var(--gold); }
-.hero__title { margin: .1rem 0 .35rem; color: #fff0c4; font-family: var(--display); font-size: clamp(6.2rem, 17vw, 12.5rem); font-weight: 900; letter-spacing: -.025em; line-height: .77; text-shadow: 0 4px 18px rgb(12 16 7 / 18%); text-transform: uppercase; }
+.hero__title { margin: .1rem 0 .35rem; color: #fff0c4; font-family: var(--display); font-size: clamp(5.5rem, 14vw, 10.5rem); font-weight: 900; letter-spacing: -.025em; line-height: .77; text-shadow: 0 4px 18px rgb(12 16 7 / 18%); text-transform: uppercase; }
 .hero__subtitle { display: inline-block; margin: 1.25rem 0 .9rem; padding: .34rem 1.1rem .45rem; color: var(--brown); background: #fff0ce; border-bottom: 4px solid var(--orange); font-family: var(--serif); font-size: clamp(1rem, 2.8vw, 1.55rem); font-weight: 600; }
 .hero__venue { margin: .3rem 0 1.2rem; font-size: .72rem; font-weight: 700; letter-spacing: .13em; line-height: 1.6; text-transform: uppercase; }
 .hero__date { display: table; margin: 1.05rem auto .9rem; padding: .55rem 1rem; color: var(--brown); background: var(--cream); font-size: .8rem; font-weight: 800; letter-spacing: .035em; text-transform: uppercase; }
@@ -46,6 +46,10 @@ a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
 .countdown__number { color: var(--gold); font-family: var(--display); font-size: 2rem; font-weight: 800; line-height: .95; }
 .countdown__date { font-size: 1.85rem; }
 .countdown__label { color: #fff4da; font-size: .72rem; font-weight: 700; letter-spacing: .1em; line-height: 1.5; text-transform: uppercase; }
+
+.organizers { padding: .95rem 6%; border-bottom: 1px solid rgb(53 32 19 / 12%); background: var(--cream); text-align: center; }
+.organizers__line { margin: 0; color: #4d3c2b; font-size: .92rem; line-height: 1.6; }
+.organizers__line a { color: var(--green); font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 
 .section-pad { padding-right: max(7%, calc((100% - 1070px) / 2)); padding-left: max(7%, calc((100% - 1070px) / 2)); }
 .welcome { padding-top: clamp(4.7rem, 8vw, 6.5rem); padding-bottom: clamp(4.5rem, 7vw, 6rem); }
@@ -96,16 +100,15 @@ a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
 .footer__details p { margin: 0; color: #f0e4cc; font-size: .82rem; line-height: 1.4; }
 .footer__details a { color: #fff0c4; text-underline-offset: 3px; }
 
-@media (min-width: 1500px) { .hero { min-height: 780px; } }
 @media (max-width: 760px) {
-  .hero { min-height: 720px; min-height: 90svh; }
+  .hero { min-height: min(640px, 76svh); }
   .hero__nav { width: 88%; }
-  .hero__content { width: 94%; padding-top: 6rem; }
+  .hero__content { width: 94%; padding: 4.1rem 0 2.75rem; }
   .hero__eyebrow { max-width: 330px; margin: 0 auto .5rem; font-size: .7rem; letter-spacing: .13em; }
-  .hero__title { font-size: clamp(6.25rem, 25vw, 10rem); }
-  .hero__subtitle { max-width: 94%; padding: .4rem .75rem .48rem; font-size: clamp(.95rem, 4vw, 1.3rem); }
+  .hero__title { font-size: clamp(5rem, 20vw, 8rem); }
+  .hero__subtitle { max-width: 94%; margin: .8rem 0 .65rem; padding: .4rem .75rem .48rem; font-size: clamp(.95rem, 4vw, 1.3rem); }
   .hero__venue { max-width: 310px; margin-right: auto; margin-left: auto; font-size: .72rem; letter-spacing: .08em; }
-  .hero__date { font-size: .7rem; }
+  .hero__date { margin: .75rem auto .7rem; font-size: .7rem; }
   .countdown { min-height: 95px; padding-right: 3%; padding-left: 3%; }
   .countdown__item { padding-right: .4rem; padding-left: .4rem; }
   .countdown__number { font-size: 1.8rem; }
@@ -129,7 +132,7 @@ a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
   .hero__nav { top: 1rem; }
   .brand-mark { font-size: .86rem; }
   .button--small { min-height: 38px; padding: .55rem .8rem; font-size: .88rem; }
-  .hero__title { font-size: 24vw; }
+  .hero__title { font-size: 20vw; }
   .countdown__label { font-size: .7rem; letter-spacing: 0; }
   .value-card { min-height: 136px; padding: .7rem .6rem; }
   .registration-card > p:not(.eyebrow):not(.registration-card__date) { max-width: 285px; font-size: .95rem; }
