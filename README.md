@@ -1,6 +1,6 @@
 # Cobbs CREEK Symposium website
 
-This folder contains your responsive Cobbs CREEK Symposium website. It uses the two original creek photos from your PDF, and each registration button opens your Qualtrics form. The creek photo between the introduction and registration is a text-free visual pause. The organizer line appears below the countdown, with links to the Water Center at Penn and Drexel University SWRE. The footer includes a clickable questions email: cobbscreeksymposium@gmail.com.
+This folder contains your responsive Cobbs CREEK Symposium website. It uses your original hero photo and a higher-resolution version of the Cobbs Creek banner photo from [American Rivers' restoration project page](https://www.americanrivers.org/cobbs-creek-restoration-project/). The second photo band is short and text-free; the footer includes a linked photo credit. Each registration button opens your Qualtrics form. The organizer line appears below the countdown, with links to the Water Center at Penn and Drexel University SWRE. The footer also includes a clickable questions email: cobbscreeksymposium@gmail.com.
 
 ## Put your website on GitHub Pages
 
