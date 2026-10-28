@@ -88,14 +88,14 @@ a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
 .visit { display: block; padding-top: clamp(1.5rem, 3vw, 2.5rem); padding-bottom: clamp(3rem, 5vw, 4rem); }
 .event-card { display: block; width: 100%; max-width: 1070px; margin: 0 auto; padding: clamp(1.25rem, 2.4vw, 1.75rem) clamp(1.4rem, 4vw, 3rem); border-radius: 17px; background: var(--green); color: var(--cream); }
 .event-card__venue { text-align: center; }
-.event-card__venue > .eyebrow { margin-bottom: .3rem; color: var(--gold); }
+.event-card__venue > .eyebrow { margin-bottom: .3rem; color: #ffd147; }
 .event-card__venue h2 { margin: 0; font-family: var(--serif); font-size: clamp(1.85rem, 3vw, 2.3rem); font-weight: 600; line-height: 1.1; text-wrap: balance; }
 .event-card__details { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(1rem, 3vw, 2rem); margin-top: .85rem; padding-top: .85rem; border-top: 1px solid rgb(248 237 203 / 35%); text-align: left; }
 .event-card__address { align-self: center; }
 .event-card__venue address { margin-top: .3rem; font-size: .92rem; font-style: normal; font-weight: 500; line-height: 1.55; }
 .visit__map-link { display: inline-block; margin-top: .35rem; color: var(--cream); font-size: .92rem; font-weight: 700; text-decoration-color: var(--gold); text-decoration-thickness: 2px; text-underline-offset: 3px; }
 .event-card__note { max-width: 470px; margin: 0; padding-left: clamp(1rem, 3vw, 2rem); border-left: 1px solid rgb(248 237 203 / 28%); color: #f0e4cc; font-size: .9rem; line-height: 1.5; }
-.event-card__label { color: var(--gold); font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.event-card__label { color: #ffd147; font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
 .footer { display: flex; min-height: 88px; align-items: center; justify-content: space-between; gap: 1.2rem; padding: 1rem max(7%, calc((100% - 1070px) / 2)); border-top: 5px solid var(--orange); background: var(--brown); color: var(--cream); }
 .footer__brand { font-size: .9rem; }
 .footer__details { display: grid; gap: .28rem; text-align: right; }
